@@ -1,4 +1,9 @@
 # ClipForge AI
+
+<p align="center">
+  <img src="assets/images/clipforgeai-banner.png" alt="ClipForge AI Banner" width="100%">
+</p>
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -99,7 +104,7 @@ flowchart LR
     User[User] --> UI[User Interface]
     UI --> Generator[MockClipGenerator]
     UI --> Storage[(LocalStorage)]
-    Generator -. Provider replacement .-> AI[Future AI Provider]
+    Generator -. AI Provider .-> AI[Future AI Provider]
 ```
 
 ## Running Locally
