@@ -1,7 +1,7 @@
 # ClipForge AI
 
 <p align="center">
-  <img src="assets/images/clipforgeai-banner.png" alt="ClipForge AI Banner">
+  <img src="assets/images/banner.png" alt="ClipForge AI Banner">
 </p>
 
 <p align="center">
@@ -17,7 +17,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=for-the-badge&logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-16A34A?style=for-the-badge)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)
 
 </p>
 
@@ -49,7 +48,7 @@ Experience the application directly in your browser — no installation required
 | **License** | MIT |
 
 
-![Vista principal de ClipForge AI](assets/images/clipforge-preview.png)
+![Vista principal de ClipForge AI](assets/images/home-preview.png)
 
 > > The current version uses a simulated AI engine built with JavaScript. Its modular architecture is designed for seamless integration with real AI providers such as OpenAI in future releases.
 
@@ -72,7 +71,7 @@ Instead of focusing solely on generating content, the project emphasizes clean a
 - Built-in example prompt and one-click workspace reset.
 - Fully responsive, accessible interface with reduced-motion support.
 
-![Resultados generados en ClipForge Studio](assets/images/clipforge-studio.png)
+![Resultados generados en ClipForge Studio](assets/images/studio-preview.png)
 
 ## Tech Stack
 
