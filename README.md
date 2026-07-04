@@ -8,11 +8,18 @@
   <strong>AI-ready platform for content creators.</strong>
 </p>
 
+<p align="center">
+
+![Version](https://img.shields.io/badge/Version-1.0.0-3B82F6?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active%20Development-22C55E?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=for-the-badge&logo=github&logoColor=white)
-![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-16A34A?style=for-the-badge)
+![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)
+
+</p>
 
 ClipForge AI is a modern SaaS-inspired web application built for content creators, streamers, and video editors.
 
@@ -20,9 +27,15 @@ It transforms long-form content descriptions into production-ready clip concepts
 
 ## 🚀 Live Demo
 
-🌐 **https://yeis0nn.github.io/clipforge-ai/**
+<p align="center">
+  <a href="https://yeis0nn.github.io/clipforge-ai/">
+    <strong>🌐 Visit ClipForge AI</strong>
+  </a>
+</p>
 
-Experience ClipForge AI directly in your browser — no installation required.
+<p align="center">
+Experience the application directly in your browser — no installation required.
+</p>
 
 ## 📋 Project Information
 
