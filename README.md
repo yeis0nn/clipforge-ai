@@ -58,7 +58,7 @@ ClipForge AI was created to explore how a modern SaaS application can be archite
 
 Instead of focusing solely on generating content, the project emphasizes clean architecture, modular design, scalability, and user experience. The current simulated AI engine can later be replaced with real AI providers such as OpenAI without requiring changes to the user interface.
 
-## Features
+## ✨ Features
 
 - Context-aware generation of three unique clip opportunities per analysis.
 - Customization by platform, duration, style, and target audience.
@@ -73,15 +73,15 @@ Instead of focusing solely on generating content, the project emphasizes clean a
 
 ![Resultados generados en ClipForge Studio](assets/images/studio-preview.png)
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- HTML5 semántico
-- CSS3 modular
-- JavaScript moderno con ES Modules
-- Web Storage API
-- Sin frameworks ni dependencias de JavaScript
+- Semantic HTML5
+- Modular CSS3
+- Modern JavaScript (ES Modules)
+- Web Storage API (`localStorage`)
+- No frameworks or external JavaScript dependencies
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 clipforge-ai/
@@ -123,7 +123,7 @@ flowchart LR
     Generator -. AI Provider .-> AI[Future AI Provider]
 ```
 
-## Running Locally
+## ▶️ Running Locally
 
 Because the project uses ES Modules, it must be served over HTTP rather than opened directly from the file system.
 
@@ -141,7 +141,7 @@ http://localhost:4173
 
 Alternatively, you can use any static web server, such as the **Live Server** extension for Visual Studio Code.
 
-## Testing
+## 🧪 Testing
 
 The project relies on Node.js' native test runner, eliminating the need for external testing frameworks or additional dependencies.
 
@@ -151,7 +151,7 @@ To run the test suite:
 node --test
 ```
 
-## Privacy
+## 🔒 Privacy
 
 All descriptions, generated content, favorites, and history remain stored locally in the user's browser.
 
@@ -185,6 +185,6 @@ ClipForge AI does not include a backend, analytics, user tracking, or external d
 - Team collaboration
 - Performance analytics dashboard
 
-## License
+## 📄 License
 
-Distribuido bajo la licencia MIT. Consulta [LICENSE](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
