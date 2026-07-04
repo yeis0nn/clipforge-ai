@@ -1,0 +1,16 @@
+{
+  "name": "ClipForge AI",
+  "short_name": "ClipForge",
+  "description": "Genera ideas de clips, hooks y dirección creativa para contenido corto.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07080a",
+  "theme_color": "#08090a",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

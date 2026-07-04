@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="brand" x1="390" y1="200" x2="865" y2="465" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#bcaeff"/>
+      <stop offset="0.52" stop-color="#8ea4ff"/>
+      <stop offset="1" stop-color="#68d6dc"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="61" y1="54" x2="121" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b5a4ff"/>
+      <stop offset="1" stop-color="#687adf"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(820 190) rotate(135) scale(540 430)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7668d8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7668d8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="white" stroke-opacity="0.035"/>
+    </pattern>
+    <filter id="cardShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="30" stdDeviation="32" flood-color="black" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#07080A"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <g transform="translate(62 52)">
+    <rect width="62" height="62" rx="17" fill="url(#mark)"/>
+    <path d="M24 18.5v25L43 31 24 18.5Z" fill="white"/>
+    <text x="80" y="39" fill="#F7F8FA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-1">ClipForge</text>
+    <rect x="213" y="14" width="38" height="27" rx="7" fill="#9B87F5" fill-opacity="0.12" stroke="#B8A8FF" stroke-opacity="0.35"/>
+    <text x="223" y="33" fill="#B8A8FF" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">AI</text>
+  </g>
+
+  <text x="62" y="221" fill="#F7F8FA" font-family="Inter, Arial, sans-serif" font-size="69" font-weight="700" letter-spacing="-3.5">
+    Convierte contenido largo en
+  </text>
+  <text x="62" y="302" fill="url(#brand)" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-4">
+    clips que conectan.
+  </text>
+  <text x="64" y="366" fill="#A5ABB5" font-family="Inter, Arial, sans-serif" font-size="23">
+    Hooks, títulos y dirección creativa para tu próximo gran clip.
+  </text>
+
+  <g transform="translate(62 430)" filter="url(#cardShadow)">
+    <rect width="1076" height="135" rx="22" fill="#111419" stroke="white" stroke-opacity="0.1"/>
+    <rect x="26" y="24" width="109" height="25" rx="7" fill="#9B87F5" fill-opacity="0.09"/>
+    <text x="39" y="41" fill="#B8A8FF" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">HOOK SUGERIDO</text>
+    <text x="27" y="88" fill="#F7F8FA" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="-0.7">
+      “Estuve a punto de abandonar justo antes de que todo funcionara.”
+    </text>
+    <rect x="895" y="24" width="151" height="31" rx="9" fill="#58D09B" fill-opacity="0.09"/>
+    <text x="914" y="44" fill="#58D09B" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">92/100 · Muy alto</text>
+  </g>
+</svg>

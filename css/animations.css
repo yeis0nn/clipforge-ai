@@ -1,0 +1,116 @@
+@keyframes fade-up {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes audio-wave {
+  0%,
+  100% {
+    transform: scaleY(0.45);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes toast-in {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero .eyebrow,
+.hero h1,
+.hero__description,
+.hero__actions,
+.hero__note,
+.product-preview {
+  animation: fade-up 700ms both;
+}
+
+.hero h1 {
+  animation-delay: 80ms;
+}
+
+.hero__description {
+  animation-delay: 150ms;
+}
+
+.hero__actions {
+  animation-delay: 220ms;
+}
+
+.hero__note {
+  animation-delay: 280ms;
+}
+
+.product-preview {
+  animation-delay: 340ms;
+}
+
+.hero__glow {
+  animation: soft-pulse 7s ease-in-out infinite;
+}
+
+.generation-status__visual span {
+  transform-origin: center;
+  animation: audio-wave 900ms ease-in-out infinite;
+}
+
+.generation-status__visual span:nth-child(2) {
+  animation-delay: 130ms;
+}
+
+.generation-status__visual span:nth-child(3) {
+  animation-delay: 260ms;
+}
+
+.clip-card {
+  animation: fade-up 500ms both;
+}
+
+.clip-card:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.clip-card:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+.toast:not([hidden]) {
+  animation: toast-in 240ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
