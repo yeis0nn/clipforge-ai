@@ -1,7 +1,11 @@
 # ClipForge AI
 
 <p align="center">
-  <img src="assets/images/clipforgeai-banner.png" alt="ClipForge AI Banner" width="100%">
+  <img src="assets/images/clipforgeai-banner.png" alt="ClipForge AI Banner">
+</p>
+
+<p align="center">
+  <strong>AI-ready platform for content creators.</strong>
 </p>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
