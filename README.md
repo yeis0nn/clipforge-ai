@@ -39,16 +39,16 @@ Instead of focusing solely on generating content, the project emphasizes clean a
 
 ## Features
 
-- Generación contextual de tres oportunidades por análisis.
-- Configuración por plataforma, duración, estilo y audiencia.
-- Hooks, títulos, descripciones, hashtags y consejos de edición.
-- Puntuación orientativa de potencial viral.
-- Regeneración completa o individual.
-- Historial y favoritos persistentes mediante `localStorage`.
-- Copiado individual o completo al portapapeles.
-- Exportación en TXT y JSON.
-- Ejemplo precargado y restablecimiento del estudio.
-- Interfaz responsive, accesible y compatible con movimiento reducido.
+- Context-aware generation of three unique clip opportunities per analysis.
+- Customization by platform, duration, style, and target audience.
+- AI-inspired hooks, titles, descriptions, hashtags, and editing recommendations.
+- Estimated viral potential score for each generated concept.
+- Regenerate all results or individual suggestions.
+- Persistent history and favorites powered by `localStorage`.
+- Copy individual or complete results to the clipboard.
+- Export generated content as TXT or JSON.
+- Built-in example prompt and one-click workspace reset.
+- Fully responsive, accessible interface with reduced-motion support.
 
 ![Resultados generados en ClipForge Studio](assets/images/clipforge-studio.png)
 
@@ -90,23 +90,41 @@ clipforge-ai/
 └── README.md
 ```
 
-El proyecto separa la generación de contenido, la persistencia y el renderizado. `MockClipGenerator` expone el contrato que puede sustituirse posteriormente por un proveedor conectado a OpenAI u otra API sin reconstruir la interfaz.
+ClipForge AI follows a modular, layered architecture that keeps presentation, application logic, content generation, and client-side persistence independent from one another. The UI communicates with a stable generation contract instead of relying on provider-specific implementation details, while storage concerns remain isolated behind a dedicated `localStorage` module.
 
-## Running Locally 
+`MockClipGenerator` acts as the current provider abstraction: it produces deterministic, AI-inspired results entirely in the browser while preserving the same boundary a production AI integration would use. In a future release, this implementation can be replaced by OpenAI or another AI provider without redesigning the interface or changing the user workflow.
 
-Los módulos ES necesitan servirse mediante HTTP. Desde la raíz del proyecto:
+```mermaid
+flowchart LR
+    User[User] --> UI[User Interface]
+    UI --> Generator[MockClipGenerator]
+    UI --> Storage[(LocalStorage)]
+    Generator -. Provider replacement .-> AI[Future AI Provider]
+```
+
+## Running Locally
+
+Because the project uses ES Modules, it must be served over HTTP rather than opened directly from the file system.
+
+From the project root, run:
 
 ```bash
 python -m http.server 4173
 ```
 
-Después abre `http://localhost:4173`.
+Then open:
 
-También puedes usar cualquier servidor estático, como la extensión Live Server de VS Code.
+```text
+http://localhost:4173
+```
+
+Alternatively, you can use any static web server, such as the **Live Server** extension for Visual Studio Code.
 
 ## Testing
 
-El proyecto utiliza el runner nativo de Node.js y no necesita instalar dependencias:
+The project relies on Node.js' native test runner, eliminating the need for external testing frameworks or additional dependencies.
+
+To run the test suite:
 
 ```bash
 node --test
@@ -114,7 +132,9 @@ node --test
 
 ## Privacy
 
-Las descripciones, generaciones y favoritos permanecen en el navegador del usuario. El proyecto no incluye backend, analítica ni transmisión de datos.
+All descriptions, generated content, favorites, and history remain stored locally in the user's browser.
+
+ClipForge AI does not include a backend, analytics, user tracking, or external data transmission. Your data never leaves your device.
 
 ## 🗺️ Roadmap
 
