@@ -81,16 +81,6 @@ El proyecto utiliza el runner nativo de Node.js y no necesita instalar dependenc
 node --test
 ```
 
-## Publicar en GitHub Pages
-
-1. Crea un repositorio y sube el contenido de esta carpeta.
-2. Abre **Settings → Pages** en GitHub.
-3. Selecciona **Deploy from a branch**.
-4. Elige la rama `main` y la carpeta `/ (root)`.
-5. Guarda la configuración y espera a que GitHub publique el sitio.
-
-No se requiere proceso de compilación.
-
 ## Privacidad
 
 Las descripciones, generaciones y favoritos permanecen en el navegador del usuario. El proyecto no incluye backend, analítica ni transmisión de datos.
